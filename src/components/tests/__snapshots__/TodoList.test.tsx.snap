@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList Component matches snapshot after useSelector is called 1`] = `
+<DocumentFragment>
+  <ul
+    class="todosList"
+    data-testid="todoList"
+  >
+    <li
+      class="item"
+    >
+      <input
+        class="check"
+        type="checkbox"
+      />
+      <span>
+        Task 1
+      </span>
+      <button
+        class="deleteButton"
+      >
+        Delete
+      </button>
+    </li>
+    <li
+      class="item"
+    >
+      <input
+        checked=""
+        class="check"
+        type="checkbox"
+      />
+      <span>
+        Task 2
+      </span>
+      <button
+        class="deleteButton"
+      >
+        Delete
+      </button>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`TodoList Component matches snapshot before useSelector is called 1`] = `
+<DocumentFragment>
+  <ul
+    class="todosList"
+    data-testid="todoList"
+  />
+</DocumentFragment>
+`;

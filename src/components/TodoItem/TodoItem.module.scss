@@ -1,0 +1,66 @@
+.item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 10px 0 10px 0;
+  color: var(--grey-white);
+  transition: border-bottom-color 0.2s ease-out,
+  color 0.2s ease-out;
+  border-bottom: 1px solid #363636;
+
+  .check {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+
+    & + span {
+      color: var(--grey-white);
+      transition: color 0.2s linear;
+    }
+
+    &:hover {
+      border: 2px solid var(--red)
+    }
+
+    &:checked + span {
+      text-decoration: line-through;
+      color: #808080;
+    }
+  }
+
+
+  span {
+    width: calc(100% - 125px);
+    font-size: 18px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  &:hover {
+    border-bottom: 1px solid var(--red);
+  }
+
+  &:hover span {
+    color: white;
+  }
+
+  .deleteButton {
+    height: 30px;
+    width: 85px;
+    margin-left: 10px;
+    border-radius: 7px;
+    background-color: var(--grey-white);
+    border: none;
+    transition: background-color 0.2s ease-out;
+    color: var(--black);
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+}

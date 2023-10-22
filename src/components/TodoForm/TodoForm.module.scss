@@ -1,0 +1,59 @@
+.form {
+  text-align: center;
+  $button_width: 85px;
+
+  .field {
+    width: calc(100% - 95px);
+    background-color: var(--grey-white);
+    vertical-align: top;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    outline: none;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    transition: background-color 0.1s ease-out;
+    border-radius: 7px;
+
+    &:hover {
+      background-color: white;
+    }
+
+    &:focus {
+      background-color: white;
+      border: 2px solid var(--red);
+    }
+  }
+
+  .addButton {
+    height: 40px;
+    width: $button-width;
+    border-radius: 7px;
+    background-color: var(--red);
+    border: none;
+    transition: background-color 0.2s ease-out;
+    color: var(--grey-white);
+    font-size: 16px;
+
+    &:hover {
+      background-color: var(--red);
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .field {
+    width: 100%;
+  }
+
+  .addButton {
+    height: 45px;
+    width: 100px;
+  }
+}
